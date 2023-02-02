@@ -3,7 +3,7 @@ body{
     background-color: #7B36CE;
 }
 .banner{
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     max-width: 100%;
     overflow-x: hidden;
@@ -239,10 +239,10 @@ body{
 
 .trending-container{
     width: 100%;
-    height: 600px;
+    height: 400px;
     display: flex;
-    margin: 60px auto;
-    font-size: 15px;
+    margin-top: 70px;
+    padding-top: 50px;
     color: white;
     background-color: #5F25A6;
     justify-content: center;
@@ -250,14 +250,77 @@ body{
 
 .trending-container ul{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: auto auto auto auto auto auto;
     align-items: center;
+    margin: 0;
+    padding: 0px;
     width: 1500px;
 }
 .thumbnail{
-    width: 230px;
-    max-width: 230px;
-    height: 350px;
-    max-height: 350px;
-    object-fit: cover;
+    background-color:#6610f2;
+    writing-mode: vertical-rl;
+    transform: scale(-1);
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    max-height: 300px;
+    padding: 0px;
+}
+
+.thumbnail p{
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0px;
+}
+.category-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-size: 15px;
+    color: white;
+    justify-content: center;
+    background-color: white;
+    background-size: cover;
+}
+.category ul{
+    padding: 0px;
+    width: 1500px;
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: scroll;
+}
+.category-items{
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+footer{
+    background-color: #451184;
+    width: 100%;
+    height: 200px;
+}
+
+.footer-logo{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    width: 300px;
+
+}
+.footer-misc ul{
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    cursor: pointer
+}
+.footer-misc ul li a{
+    list-style: none;
 }
